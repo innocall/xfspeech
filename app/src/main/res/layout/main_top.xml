@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_top"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chinese"
+            android:textSize="@dimen/main_top_size"/>
+
+        <ImageView
+            android:layout_width="@dimen/main_top_swap"
+            android:layout_height="@dimen/main_top_swap"
+            android:layout_marginLeft="@dimen/main_top_7"
+            android:layout_marginRight="@dimen/main_top_7"
+            android:src="@mipmap/top_swap"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/english"
+            android:textSize="@dimen/main_top_size"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="@dimen/main_top_trash"
+        android:layout_height="@dimen/main_top_trash"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/main_top_7"
+        android:src="@mipmap/top_trash"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_alignParentBottom="true"></View>
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xlsz.xfspeech.MainActivity">
+
+
+    <include layout="@layout/main_top"></include>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/main_bottom_height"
+        android:layout_marginTop="@dimen/main_top">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/msg_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/msg_vioce"
+            android:layout_width="@dimen/toast_100"
+            android:layout_height="@dimen/toast_100"
+            android:layout_gravity="center"
+            android:background="@drawable/toast"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/main_top_7"
+                android:src="@mipmap/microphone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/record"
+                android:layout_marginTop="@dimen/main_top_7"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/main_top_7"
+        android:layout_marginTop="@dimen/main_top_7"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/chinese"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_top_8"
+            android:layout_marginRight="@dimen/main_top_8"
+            android:layout_weight="1"
+            android:background="@drawable/but_chinese"
+            android:text="@string/chinese"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/english"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/main_top_8"
+            android:layout_weight="1"
+            android:background="@drawable/but_english"
+            android:text="@string/English"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+
+</RelativeLayout>

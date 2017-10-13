@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">xfspeech</string>
+    <string name="chinese">中文</string>
+    <string name="english">英文</string>
+    <string name="English">English(EN_US)</string>
+    <string name="chinese_prompt">松手 翻译</string>
+    <string name="englist_prompt">Release to translate</string>
+    <string name="record">录音中</string>
+    <string name="title_chinese">中</string>
+    <string name="title_englist">英</string>
+</resources>

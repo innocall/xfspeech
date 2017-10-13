@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/round_red" android:state_enabled="true" android:state_focused="false" android:state_pressed="false" />
+    <!--选择器的默认颜色-->
+    <item android:drawable="@drawable/round_red_an" android:state_focused="true" />
+    <!--是否取得焦点,true取的焦点-->
+    <item android:drawable="@drawable/round_red_an" android:state_pressed="true"/>
+</selector>
